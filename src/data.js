@@ -40,6 +40,7 @@ export const workers = [
     verified: true,
     available: true,
     bio: 'Helping students find clean, affordable rooms around Bayero University for 6 years.',
+    services: ['rooms'],
   },
   {
     id: 2,
@@ -54,6 +55,7 @@ export const workers = [
     verified: true,
     available: true,
     bio: 'Fast response. Wiring, sockets, fan installation, generator work.',
+    services: ['electrician'],
   },
   {
     id: 3,
@@ -68,6 +70,7 @@ export const workers = [
     verified: true,
     available: true,
     bio: 'Same-day laundry and dry cleaning for students.',
+    services: ['laundry'],
   },
   {
     id: 4,
@@ -82,6 +85,7 @@ export const workers = [
     verified: true,
     available: true,
     bio: 'Rooms and shared apartments near ATBU and around Bauchi.',
+    services: ['rooms'],
   },
   {
     id: 5,
@@ -96,6 +100,7 @@ export const workers = [
     verified: true,
     available: false,
     bio: 'Gas refill, compressor, thermostat. 8 years experience.',
+    services: ['ac'],
   },
   {
     id: 6,
@@ -110,6 +115,7 @@ export const workers = [
     verified: false,
     available: true,
     bio: 'Room and hostel deep cleaning.',
+    services: ['cleaner'],
   },
 ]
 
@@ -121,7 +127,6 @@ export const rooms = [
     location: 'New Site, Kano',
     agent: 'Amina Yusuf',
     agentId: 1,
-    photos: 1,
     facilities: ['Water', 'Toilet', 'Kitchen'],
     availableFrom: 'Immediate',
   },
@@ -132,7 +137,6 @@ export const rooms = [
     location: 'Old Campus area, Kano',
     agent: 'Amina Yusuf',
     agentId: 1,
-    photos: 1,
     facilities: ['Water', 'Security'],
     availableFrom: 'Next week',
   },
@@ -143,8 +147,19 @@ export const rooms = [
     location: 'Yelwa, Bauchi',
     agent: 'Fatima Mohammed',
     agentId: 4,
-    photos: 1,
     facilities: ['Water', 'Light'],
     availableFrom: 'Immediate',
   },
+]
+
+export const mockMessages = [
+  { id: 1, from: 'Amina Yusuf', text: 'The self-contain is still available. When can you come?', time: '10:24 AM', unread: true },
+  { id: 2, from: 'Musa Ibrahim', text: 'I can come tomorrow morning for the socket issue.', time: 'Yesterday', unread: false },
+  { id: 3, from: 'Sani Abdullahi', text: 'Your clothes are ready for pickup.', time: 'Mon', unread: false },
+]
+
+export const mockHistory = [
+  { id: 1, type: 'Room enquiry', with: 'Amina Yusuf', date: '20 Nov 2026', status: 'Contacted' },
+  { id: 2, type: 'Electrician', with: 'Musa Ibrahim', date: '12 Nov 2026', status: 'Completed' },
+  { id: 3, type: 'Laundry', with: 'Sani Abdullahi', date: '5 Nov 2026', status: 'Completed' },
 ]

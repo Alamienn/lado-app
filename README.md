@@ -2,31 +2,26 @@
 
 Student local services platform for Kano, Dutse & Bauchi.
 
-Find rooms, electricians, plumbers, laundry, cleaners and more near your campus.
+Built by **ADLE WEBDESIGNS**  
+Email: alamienn02@yahoo.com  
+Phone: 09036842183
 
-## Features (MVP)
+## Features
 
-- Marketing homepage (attractive before login)
-- Search workers & rooms by category / keyword
-- Worker profiles with Call + WhatsApp buttons
-- Student & Worker registration UI
-- Mock data for testing
+- Marketing homepage
+- Search workers & rooms
+- Worker profiles (Call + WhatsApp)
+- Student & Worker registration (with university)
+- Student dashboard (history, messages, quick actions)
+- Worker dashboard (details, services, messages, report)
+- Edit profile (add more services)
+- In-app messages (demo)
+- Report a person
+- Footer with company contacts on all pages
 
-## Tech
-
-- React + Vite
-- React Router
-- Pure CSS (teal + cream + coral theme)
-
-## Run locally
+## Run
 
 ```bash
 npm install
 npm run dev
 ```
-
-Open the URL Vite shows (usually http://localhost:5173).
-
-## Target
-
-Students in universities across Kano, Jigawa (Dutse) and Bauchi states, Nigeria.
